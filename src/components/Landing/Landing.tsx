@@ -4,7 +4,7 @@ import './Landing.scss';
 
 const Landing: React.FC = (props: any) => {
     return (
-        <div className='landing d-flex align-items-center justify-content-between mt-5'>
+        <div className='landing d-flex flex-column-reverse flex-md-row align-items-center justify-content-between'>
             <div>
                 <h1 className='text-white'>
                     Alleviate <br/>

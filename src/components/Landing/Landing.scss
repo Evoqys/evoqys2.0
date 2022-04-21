@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .landing {
-  height: calc(100vh - 200px);
+  margin-top: 120px;
   .desc {
     color: $alternate-text-color;
   }

@@ -1,5 +1,7 @@
+@import "typography";
 @import "variables";
 @import "fonts";
+@import "../components/Header/Header";
  body {
    background: linear-gradient(180deg, $background 0%, black 100%);
  }

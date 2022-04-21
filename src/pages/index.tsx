@@ -1,10 +1,13 @@
 import * as React from "react"
 import '../styles/main.scss'
+import Header from '../components/Header/Header';
 
 // markup
 const IndexPage = () => {
   return (
-      <button className='btn btn-lg btn-success'>Hello ji</button>
+      <div className='container py-4'>
+        <Header/>
+      </div>
   )
 }
 

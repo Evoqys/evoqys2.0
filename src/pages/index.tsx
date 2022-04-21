@@ -4,7 +4,7 @@ import '../styles/main.scss'
 // markup
 const IndexPage = () => {
   return (
-      <div style={{color:'white'}}>Hello</div>
+      <button className='btn btn-lg btn-success'>Hello ji</button>
   )
 }
 

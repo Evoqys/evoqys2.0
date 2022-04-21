@@ -9,7 +9,7 @@ const About: React.FC = (props: any) => {
         <SectionLayout title='About'>
             <div className='d-flex flex-column flex-md-row align-items-center'>
                 <img src={AboutImage} alt='about'/>
-                <p className='about w-75 mt-5 mt-md-0 ms-md-5'>
+                <p className='about mt-5 mt-md-0 ms-md-5'>
                     <span className='title'>E</span>voqys is the expert partner you need to deliver innovative, scalable, and competitive results. <br/>
                     We are a group of tech enthusiasts leading the digital transformation of our worldwide clients through our services. We have our own Youtube channel where we share a glimpse of our knowledge.
                 </p>

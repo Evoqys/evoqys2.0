@@ -2,6 +2,10 @@
 @import "variables";
 @import "fonts";
 @import "../components/Header/Header";
+
+@import "bootstrap-overrides";
+
  body {
+   height: 100vh;
    background: linear-gradient(180deg, $background 0%, black 100%);
  }

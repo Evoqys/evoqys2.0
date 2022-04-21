@@ -5,7 +5,7 @@ import Header from '../components/Header/Header';
 // markup
 const IndexPage = () => {
   return (
-      <div className='container py-4'>
+      <div className='container'>
         <Header/>
       </div>
   )

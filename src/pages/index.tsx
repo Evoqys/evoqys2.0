@@ -4,7 +4,7 @@ import '../styles/main.scss'
 // markup
 const IndexPage = () => {
   return (
-      <>Hello</>
+      <div style={{color:'white'}}>Hello</div>
   )
 }
 

@@ -7,6 +7,7 @@ import About from '../sections/About/About';
 import OurProcess from '../sections/OurProcess/OurProcess';
 import Services from '../sections/Services/Services';
 import ContactUs from '../sections/Contact-us/ContactUs';
+import Footer from '../sections/Footer/Footer';
 
 // markup
 const IndexPage = () => {
@@ -18,6 +19,7 @@ const IndexPage = () => {
             <OurProcess/>
             <Services/>
             <ContactUs/>
+            <Footer/>
         </div>
     );
 };

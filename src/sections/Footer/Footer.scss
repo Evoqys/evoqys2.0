@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+.footer {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 16px;
+  a {
+    color: $alternate-text-color;
+  }
+  .logo {
+    width: 7rem;
+    max-height: 30px;
+  }
+  .social {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-right: 15px;
+  }
+}

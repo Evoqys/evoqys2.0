@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore
 import Logo from '/src/images/logo.png';
 
 const Header:React.FC = (props: any) => {

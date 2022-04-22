@@ -5,6 +5,7 @@ import Landing from '../sections/Landing/Landing';
 import About from '../sections/About/About';
 import OurProcess from '../sections/OurProcess/OurProcess';
 import Services from '../sections/Services/Services';
+import ContactUs from '../sections/Contact-us/ContactUs';
 
 // markup
 const IndexPage = () => {
@@ -15,6 +16,7 @@ const IndexPage = () => {
             <About/>
             <OurProcess/>
             <Services/>
+            <ContactUs/>
         </div>
     );
 };

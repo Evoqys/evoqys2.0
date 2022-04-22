@@ -103,7 +103,7 @@ const ContactUs = () => {
                   label='Message'
                   placeholder='Your message'
                   onChange={onFormStateChange}/>
-              <button className='w-100 text-white btn send-message-btn'>SEND MESSAGE</button>
+              <button onClick={onSubmit} className='w-100 text-white btn send-message-btn'>SEND MESSAGE</button>
 
             </div>
               <img className='img-fluid' src={Contact} alt='Contact'/>

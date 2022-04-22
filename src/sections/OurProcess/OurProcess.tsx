@@ -43,7 +43,7 @@ const PROCESS = [
 
 
 const Step: React.FC<{ image: any, title: string, desc: string }> = ({ image, title, desc }) => (
-    <div className='d-flex'>
+    <div className='d-flex my-2'>
         <img width='40' height='40' src={image} alt='Requirement'/>
         <div className='d-flex flex-column ms-4'>
             <h6 className='text-white'>{title}</h6>
@@ -60,9 +60,9 @@ const OurProcess: React.FC = (props: any) => {
                 We strictly follow the complete Software development lifecycle to ensure a single vision of a product
                 for all the parties involved and better management control over the entire project.
             </p>
-            <div className='d-flex align-items-md-center justify-content-between'>
+            <div className='d-flex flex-column flex-md-row align-items-md-center justify-content-between'>
                 <img src={OurProcessImage} alt='Our process' className='img-fluid'/>
-                <div className='ms-md-5'>
+                <div className='ms-md-5 mt-4'>
                     {
                         PROCESS.map(p => (
                             <Step

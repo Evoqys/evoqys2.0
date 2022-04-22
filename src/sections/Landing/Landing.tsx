@@ -20,7 +20,7 @@ const Landing: React.FC = (props: any) => {
                     OUR SERVICES
                 </button>
             </div>
-            <img src={LandingImage} alt='Landing' className='img-fluid'/>
+            <img src={LandingImage} alt='Landing' className='img-fluid animate__animated animate__pulse animate__infinite animate__slower'/>
         </div>
     );
 };

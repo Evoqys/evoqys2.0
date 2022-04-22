@@ -55,7 +55,7 @@ const Step: React.FC<{ image: any, title: string, desc: string }> = ({ image, ti
 
 const OurProcess: React.FC = (props: any) => {
     return (
-        <SectionLayout title='Our process'>
+        <SectionLayout title='Our Process'>
             <p>
                 We strictly follow the complete Software development lifecycle to ensure a single vision of a product
                 for all the parties involved and better management control over the entire project.

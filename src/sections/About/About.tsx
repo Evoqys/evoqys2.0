@@ -6,7 +6,7 @@ import AboutImage from '../../images/about.svg';
 
 const About: React.FC = (props: any) => {
     return (
-        <SectionLayout title='About'>
+        <SectionLayout title='About' id='about'>
             <div className='d-flex flex-column flex-md-row align-items-center'>
                 <img src={AboutImage} alt='about'/>
                 <p className='about mt-5 mt-md-0 ms-md-5'>

@@ -18,7 +18,7 @@ import Devops from '../../images/devops.svg';
 
 const Services: React.FC = (props: any) => {
     return (
-        <SectionLayout title='Our Services'>
+        <SectionLayout title='Our Services' id='services'>
             <div className='services'>
                 <div className='service-card d-flex flex-column flex-md-row align-items-center py-5 px-4 my-5'>
                     <div>

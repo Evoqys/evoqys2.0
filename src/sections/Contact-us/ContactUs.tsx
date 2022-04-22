@@ -76,7 +76,7 @@ const ContactUs = () => {
   }
 
   return (
-      <SectionLayout title="We'd love to hear from you">
+      <SectionLayout title="We'd love to hear from you" id='contact-us'>
         <h4 className='text-white'>Contact us</h4>
           <div className='d-flex flex-column-reverse flex-md-row justify-content-between'>
             <div className='w-100 me-md-5'>

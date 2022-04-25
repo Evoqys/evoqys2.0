@@ -8,6 +8,7 @@ import OurProcess from '../sections/OurProcess/OurProcess';
 import Services from '../sections/Services/Services';
 import ContactUs from '../sections/Contact-us/ContactUs';
 import Footer from '../sections/Footer/Footer';
+import Projects from '../sections/Projects/Projects';
 
 // markup
 const IndexPage = () => {
@@ -18,6 +19,7 @@ const IndexPage = () => {
             <About/>
             <OurProcess/>
             <Services/>
+            <Projects/>
             <ContactUs/>
             <Footer/>
         </div>

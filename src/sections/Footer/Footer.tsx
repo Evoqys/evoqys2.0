@@ -25,7 +25,7 @@ const Footer: React.FC = (props: any) => {
                 <img src={Logo} alt='Logo' className='img-fluid logo'/>
                 <div className='d-flex align-items-center mt-4'>
                     <img className='icon' src={Location} alt='Location'/>
-                    <div className='m-0 ms-3'>C-147, Indira Nagar, Lucknow, 226010</div>
+                    <div className='m-0 ms-3'>Sector 76, Noida, Uttar Pradesh - 201306</div>
                 </div>
                 <div className='d-flex align-items-center mt-2'>
                     <img className='icon' src={Mail} alt='Mail'/>

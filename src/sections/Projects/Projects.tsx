@@ -2,34 +2,48 @@ import React from 'react';
 import './Projects.scss';
 import SectionLayout from '../../components/SectionLayout';
 // @ts-ignore
-import Sbys from '../../images/sbys.png';
+import Sbys from '../../images/sbys.jpeg';
 // @ts-ignore
 import Edvi from '../../images/edvi.png';
 // @ts-ignore
 import Ringbay from '../../images/ringbay.png';
+// @ts-ignore
+import Medox from '../../images/medox.png';
+// @ts-ignore
+import Explo from '../../images/explo.png';
 
 // @ts-ignore
-import Angular from '../../images/icons/angular.png';
+import Angular from '../../images/icons/angular.svg';
 // @ts-ignore
-import Flutter from '../../images/icons/flutter.png';
+import Flutter from '../../images/icons/flutter.svg';
 // @ts-ignore
-import Jhipster from '../../images/icons/jhipster.png';
+import Jhipster from '../../images/icons/jhipster.svg';
 // @ts-ignore
-import Node from '../../images/icons/node.png';
+import Node from '../../images/icons/node.svg';
 // @ts-ignore
-import Msql from '../../images/icons/msql.png';
+import Msql from '../../images/icons/msql.svg';
 // @ts-ignore
-import Psql from '../../images/icons/psql.png';
+import Psql from '../../images/icons/psql.svg';
 // @ts-ignore
-import Aws from '../../images/icons/aws.png';
+import Aws from '../../images/icons/aws.svg';
 // @ts-ignore
-import Dj from '../../images/icons/django.png';
+import Dj from '../../images/icons/dj.svg';
 // @ts-ignore
-import Akita from '../../images/icons/akita.png';
+import Akita from '../../images/icons/akita.svg';
 // @ts-ignore
-import Mobx from '../../images/icons/mobx.png';
+import Mobx from '../../images/icons/mobx.svg';
 // @ts-ignore
-import Ant from '../../images/icons/ant.png';
+import Ant from '../../images/icons/ant.svg';
+// @ts-ignore
+import ReactIcon from '../../images/icons/react.svg';
+// @ts-ignore
+import Gql from '../../images/icons/graphql.svg';
+// @ts-ignore
+import Nest from '../../images/icons/nest.svg';
+// @ts-ignore
+import Agora from '../../images/icons/agora.svg';
+// @ts-ignore
+import Chakra from '../../images/icons/chakra.svg';
 
 type ProjectImage = { image: string, label: string };
 type Project = { image: string, description: string, tech: ProjectImage[] };
@@ -58,13 +72,57 @@ const PROJECTS: Project[] = [
             { image: Mobx, label: 'Mobx' },
         ]
     },
+    {
+        image: Medox,
+        description: 'Medox hospital provides online consultation services to their patients.\n' +
+            'We build the complete product including backend, mobile app and frontend from scratch.',
+        tech: [
+            { image: ReactIcon, label: 'React' },
+            { image: Gql, label: 'Graph QL' },
+            { image: Chakra, label: 'Chakra UI' },
+            { image: Nest, label: 'Nest JS' },
+            { image: Msql, label: 'My Sql' },
+            { image: Flutter, label: 'Flutter' },
+            { image: Mobx, label: 'MobX' },
+            { image: Agora, label: 'Agora' },
+            { image: Aws, label: 'AWS' },
+        ]
+    },
+    {
+        image: Explo,
+        description: 'Explo App lets GenZ explore the world\'s most exciting spots through personalized feeds, smart recommendations and short video content. Our main role was to write complete backend and mobile app from scratch and implement personalized recommendations using AWS.',
+        tech: [
+            { image: Dj, label: 'Django' },
+            { image: Gql, label: 'Graph QL' },
+            { image: Psql, label: 'Postgres' },
+            { image: Flutter, label: 'Flutter' },
+            { image: Mobx, label: 'MobX' },
+            { image: Aws, label: 'AWS' },
+        ]
+    },
 ];
 
 const Projects: React.FC = (props: any) => {
     return (
         <SectionLayout title='Our Projects' id='projects'>
             <div className='projects d-grid gap-3'>
-                <div className='grid'/>
+                {
+                    PROJECTS.map(project => (
+                        <div className='grid d-flex flex-column align-items-center'>
+                            <img className='rounded-2' src={project.image} alt='Project image' width='310' height='170'/>
+                            <p className='mt-3'>{project.description}</p>
+                            <div>
+                                {
+                                    project.tech.map(tech => (
+                                        <img className='tech me-3 mt-2' src={tech.image} alt={tech.label}/>
+                                    ))
+                                }
+                            </div>
+
+                        </div>
+                    ))
+                }
+
             </div>
         </SectionLayout>
     );

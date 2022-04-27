@@ -44,6 +44,8 @@ import Nest from '../../images/icons/nest.svg';
 import Agora from '../../images/icons/agora.svg';
 // @ts-ignore
 import Chakra from '../../images/icons/chakra.svg';
+// @ts-ignore
+import Netlify from '../../images/icons/metlify.svg';
 
 type ProjectImage = { image: string, label: string };
 type Project = { image: string, description: string, tech: ProjectImage[] };
@@ -86,6 +88,7 @@ const PROJECTS: Project[] = [
             { image: Mobx, label: 'MobX' },
             { image: Agora, label: 'Agora' },
             { image: Aws, label: 'AWS' },
+            { image: Netlify, label: 'Netlify' },
         ]
     },
     {

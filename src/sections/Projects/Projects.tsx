@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.scss';
 import SectionLayout from '../../components/SectionLayout';
+import ReactTooltip from 'react-tooltip'
 // @ts-ignore
 import Sbys from '../../images/sbys.jpeg';
 // @ts-ignore
@@ -45,7 +46,7 @@ import Agora from '../../images/icons/agora.svg';
 // @ts-ignore
 import Chakra from '../../images/icons/chakra.svg';
 // @ts-ignore
-import Netlify from '../../images/icons/metlify.svg';
+import Netlify from '../../images/icons/netlify.svg';
 
 type ProjectImage = { image: string, label: string };
 type Project = { image: string, description: string, tech: ProjectImage[] };
@@ -117,10 +118,15 @@ const Projects: React.FC = (props: any) => {
                             <div>
                                 {
                                     project.tech.map(tech => (
-                                        <img className='tech me-3 mt-2' src={tech.image} alt={tech.label}/>
+                                        <img
+                                            data-tip={tech.label}
+                                            className='tech me-3 mt-2'
+                                            src={tech.image}
+                                            alt={tech.label}/>
                                     ))
                                 }
                             </div>
+                            <ReactTooltip backgroundColor='#162447' effect='solid'/>
 
                         </div>
                     ))

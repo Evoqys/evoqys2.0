@@ -9,11 +9,13 @@ import Services from '../sections/Services/Services';
 import ContactUs from '../sections/Contact-us/ContactUs';
 import Footer from '../sections/Footer/Footer';
 import Projects from '../sections/Projects/Projects';
+import SEO from '../components/Seo';
 
 // markup
 const IndexPage = () => {
     return (
         <div className='container'>
+            <SEO title="Evoqys"/>
             <Header/>
             <Landing/>
             <About/>

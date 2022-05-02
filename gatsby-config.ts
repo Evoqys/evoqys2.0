@@ -3,7 +3,7 @@ import type { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
     siteMetadata: {
         title: `Evoqys`,
-        siteUrl: `https://www.yourdomain.tld`
+        siteUrl: `https://www.evoqys.in`
     },
     plugins: ['gatsby-plugin-sass', {
         resolve: 'gatsby-plugin-google-analytics',

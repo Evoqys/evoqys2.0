@@ -16,9 +16,9 @@ const Landing: React.FC = (props: any) => {
                     <span className='brand-name'>Evo</span>lving <span className='brand-name'>Q</span>ualit<span
                     className='brand-name'>y</span> <span className='brand-name'>S</span>oftwares
                 </h3>
-                <button className='services btn btn-lg text-white mt-5'>
+                <a href='#services'  className='services btn btn-lg text-white mt-5'>
                     OUR SERVICES
-                </button>
+                </a>
             </div>
             <img src={LandingImage} alt='Landing' className='img-fluid animate__animated animate__pulse animate__infinite animate__slower'/>
         </div>
